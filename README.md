@@ -1,5 +1,5 @@
 # Projecte Name: Book-collection
-## LIVE DEMO: https//book-store.surge.sh
+## LIVE DEMO: [(https//book-stor.surge.sh/)]
 
 Currently, two official plugins are available:
 
