@@ -1,6 +1,5 @@
 # Projecte Name: Book-collection
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## LIVE DEMO: https//book-store.surge.sh
 
 Currently, two official plugins are available:
 
