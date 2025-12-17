@@ -7,6 +7,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
+
 import Root from './Components/Root/Root';
 import ErrorPage from './Components/ErrorPage/ErrorPage';
 import Home from './Components/Home/Home';
@@ -15,6 +17,7 @@ import BookDetail from './Components/bookDetail/bookDetail';
 import ListedBooks from './Components/ListedBooks/ListedBooks';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { HelmetProvider } from 'react-helmet-async';
 
 
 const router = createBrowserRouter([
@@ -39,7 +42,7 @@ const router = createBrowserRouter([
         element: <ListedBooks></ListedBooks>,
         loader: () => fetch('/booksData.json')
       },
-      
+
       {
         path: 'dashboard',
         element: <DashBoard></DashBoard>
@@ -52,7 +55,9 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   <RouterProvider router={router} />
-   <ToastContainer />
+    <HelmetProvider>
+      <RouterProvider router={router} />
+      <ToastContainer />
+    </HelmetProvider>
   </StrictMode>,
 )

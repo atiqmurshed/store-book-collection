@@ -11,7 +11,6 @@ const Banner = () => {
             className="max-w-sm rounded-lg shadow-2xl" />
           <div>
             <h1 className="text-5xl font-bold">Box Office News!</h1>
-          
             <button className="btn btn-primary">Get Started</button>
           </div>
         </div>
